@@ -11,6 +11,11 @@
     url("../assets/fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Poppins-Italic";
+  src: local(""), url("../assets/fonts/Poppins-Italic.ttf") format("truetype");
+}
+
 body {
   background-color: hsl(0, 0%, 86%);
 }
@@ -22,7 +27,6 @@ body {
   width: 40%;
   margin: 6rem auto;
   padding: 3%;
-  padding-right: 7.5%;
 }
 
 /* Input Section Start */
@@ -71,17 +75,25 @@ input:focus {
 
 /* Input Section End */
 
-/* Ruler Section Start */
+/* Border Section Start */
+
+.border {
+  display: flex;
+  align-items: center;
+}
+
+.ruler {
+  border-bottom: 1px solid hsl(0, 0%, 86%);
+  width: 100%;
+  height: 0px;
+}
 
 img {
   background-color: hsl(259, 100%, 65%);
   height: 25px;
   width: 25px;
-  padding: 1.25%;
+  padding: 3%;
   border-radius: 50%;
-  position: absolute;
-  left: 67.5%;
-  top: 33%;
 }
 
 img:hover {
@@ -93,7 +105,7 @@ hr {
   margin: 6% 0%;
 }
 
-/* Ruler Section End */
+/* Border Section End */
 
 /* Result Section Start */
 
@@ -108,3 +120,25 @@ hr {
 }
 
 /* Result Section End */
+
+/* Error State */
+
+.error_state {
+  color: hsl(0, 100%, 67%);
+}
+
+.red_border {
+  border-color: hsl(0, 100%, 67%);
+}
+
+.error_text {
+  font-family: "Poppins-Italic";
+  font-size: 11px;
+  margin: 0px;
+}
+
+/* Hidden State */
+
+.hidden {
+  display: none;
+}
