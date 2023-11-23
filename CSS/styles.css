@@ -6,6 +6,12 @@
 }
 
 @font-face {
+  font-family: "Poppins-ExtraBold";
+  src: local(""),
+    url("../assets/fonts/Poppins-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "Poppins-ExtraBoldItalic";
   src: local(""),
     url("../assets/fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");
@@ -120,6 +126,59 @@ hr {
 }
 
 /* Result Section End */
+
+/* Mobile View Start */
+
+@media (max-width: 376px) {
+  .age_calculator_block {
+    width: 82.5%;
+    height: 27rem;
+    padding: 7%;
+    padding-bottom: 0%;
+    border-radius: 17px;
+    border-bottom-right-radius: 100px;
+  }
+
+/* Mobile Input Form Start */
+
+  label {
+    font-family: "Poppins-ExtraBold";
+  }
+
+  .input_column {
+    width: 29%;
+    margin: 5% 0%;
+  }
+
+/* Mobile Input Form End */
+
+/* Mobile Border View Start */
+
+  img {
+    position: relative;
+    right: 62%;
+    padding: 5%;
+    margin: 2% 0%;
+  }
+
+  .ruler {
+    min-width: 100%;
+  }
+
+/* Mobile Border View End */
+
+/* Mobile Results Start */
+
+.results {
+  margin: 3% 0%;
+}
+
+/* Mobile Results End */
+
+
+}
+
+/* Mobile View End */
 
 /* Error State */
 
